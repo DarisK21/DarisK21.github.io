@@ -1,0 +1,91 @@
+<!-- html/project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daris Kadric - Projects</title>
+    <link rel="stylesheet" href="../css/styleprj1.css">
+    <link rel="stylesheet" href="../css/stylemobile.css">
+    <script src="../js/features.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Daris Kadric</h1>
+        <p>kadricd@uindy.edu | 513-206-0916</p>
+    </header>
+
+    <nav class="menu" role="tablist">
+        <a href="infoprj1.html" class="menu-item" data-tab="info" role="tab">Info</a>
+        <a href="project.html" class="menu-item active" data-tab="project" role="tab">Projects</a>
+        <a href="hobby.html" class="menu-item" data-tab="hobby" role="tab">Hobbies</a>
+    </nav>
+
+    <main class="content">
+        <section id="project-tab" class="tab-content active" role="tabpanel">
+            <div class="image-section">
+                <img src="../img/jspic.jpg" alt="Project image" class="project-img">
+            </div>
+            <div class="text-section">
+                <h2>Engineering Design Experience</h2>
+                <p class="desktop-text">Here are some of my key projects, showcasing my skills in C++ and game simulation.</p>
+                <p class="mobile-text">Key projects in C++ game sims.</p>
+
+                <!-- JS Effect 1: Accordion for my persnal project that i did -->
+                <div class="accordion">
+                    <button class="accordion-btn">Custom Card Game Simulation</button>
+                    <div class="accordion-content">
+                        <p>Developed an original card game in C++ as a personal project.</p>
+                        <ul>
+                            <li>Utilized Data Structures: Designed a linked list-based system to manage dynamic hand sizes.</li>
+                            <li>Object-Oriented Design: Created classes for players, cards, and the deck.</li>
+                            <li>Game Logic & Memory Management: Implemented rules for drawing, elimination, with special handling for Ace and Joker.</li>
+                        </ul>
+                    </div>
+                    <button class="accordion-btn">Custom Board Game Simulation</button>
+                    <div class="accordion-content">
+                        <p>Developed a 7x7 island-themed board game in C++ as a personal project.</p>
+                        <ul>
+                            <li>Data Structures: Used linked lists, stacks, queues, and 2D arrays.</li>
+                            <li>Game Logic & Memory Management: Managed hazards, treasures, and player turns.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- JS Effect 2: Image gallery slider from my persnal project -->
+                <div class="gallery">
+                    <img src="../img/card.jpg" alt="Gallery image 1" class="gallery-img active">
+                    <img src="../img/bgame.jpg" alt="Gallery image 2" class="gallery-img">
+                    <button class="prev-btn">&lt;</button>
+                    <button class="next-btn">&gt;</button>
+                </div>
+
+                <!-- JS Effect 3: Skill bar animation about how mush i accoplsihed from my college career -->
+                <h3>Skills Progress</h3>
+                <div class="skill-bar">
+                    <p>C++</p>
+                    <div class="bar"><div class="progress" data-percent="80"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <p>Python</p>
+                    <div class="bar"><div class="progress" data-percent="50"></div></div>
+                </div>
+
+                <!-- JS Effect 4: Counter up for stats on how many projects i completed and years of how many years i commpleted college-->
+                <h3>Stats</h3>
+                <div class="counter" data-target="5">0</div> <p>Projects Completed</p>
+                <div class="counter" data-target="2">0</div> <p>Years Experience</p>
+
+                <!-- JS Effect 5: Modal popup of additional information -->
+                <button class="modal-btn">View More Details</button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Additional project details: Working on my personal website and adding infomartion about myself.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

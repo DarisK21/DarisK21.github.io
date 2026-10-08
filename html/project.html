@@ -1,0 +1,176 @@
+<!-- html/project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daris Kadric | Computer Science Projects</title>
+    <link rel="stylesheet" href="../css/styleprj1.css">
+    <link rel="stylesheet" href="../css/stylemobile.css">
+    <script src="../js/features.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <span class="header-badge">Portfolio Highlights</span>
+        <h1>Featured Engineering Projects</h1>
+        <p class="tagline">Explore interactive games, algorithms, and 3D web applications developed in C#, C++, and JavaScript.</p>
+
+        <div class="header-actions">
+            <a href="https://www.linkedin.com/in/daris-kadric/" target="_blank" rel="noopener noreferrer" class="btn-primary">Connect on LinkedIn</a>
+            <a href="../D,Kadric Resume (2).pdf" target="_blank" class="btn-secondary">Download Resume</a>
+        </div>
+    </header>
+
+    <nav class="menu" role="tablist">
+        <a href="infoprj1.html" class="menu-item">About & Experience</a>
+        <a href="project.html" class="menu-item active">Featured Projects</a>
+        <a href="hobby.html" class="menu-item">Athletics & Hobbies</a>
+        <a href="contact.html" class="menu-item">Contact</a>
+    </nav>
+
+    <main class="content">
+        <!-- Project 1: Casino Console Game -->
+        <article class="project-card">
+            <h3>🎰 Casino Console Multi-Game Suite <span class="tech-tag">C# / .NET 7.0</span></h3>
+            <p class="project-meta">CSCI 310 GUI & Game Programming | Team Project by Noah Vachon & Daris Kadric</p>
+            <p>
+                An enterprise-level multi-game casino console application programmed with pure object-oriented architecture in C#. Features shared persistence balance tracking ($1,000 baseline) and responsive ASCII-rendered UI with non-blocking key inputs and real-time audio cues.
+            </p>
+            
+            <div class="badge-group">
+                <span class="tech-tag">Object-Oriented Design</span>
+                <span class="tech-tag">State Machine</span>
+                <span class="tech-tag">Hi-Lo Card Counting</span>
+                <span class="tech-tag">Dynamic Multipliers</span>
+                <span class="tech-tag">Audio Integration</span>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-btn">Game Implementations & Math Modules <span>▼</span></button>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>🃏 Blackjack Pro:</strong> Complete rule set featuring Split Pairs, 2:1 Insurance against Ace, Surrender (50% refund), and 3:2 Natural Blackjack payout. Built-in <strong>Hi-Lo Card Counting Engine</strong> displaying Running Count, True Count based on shoe penetration, and card decks remaining.</li>
+                        <li><strong>💎 Mines Strategy Engine:</strong> 5x5 dynamic grid featuring Auto-Pick Mode (A key), Cross/Square/Diagonal area patterns, single-game Undo mechanics with a 10% penalty, and real-time color-coded density risk monitoring.</li>
+                        <li><strong>🎲 Traditional & Proposition Craps:</strong> Full Come-Out and Point phases alongside side bets: Field Bets (paying up to 2:1 on 2/12), Place Bets (paying 3:1 on 5/9, 2:1 on 4/10), Any 7, and Any Craps (7:1 payout).</li>
+                        <li><strong>🎡 European & American Roulette:</strong> Switchable mode wheel support (2.7% vs 5.26% house edge), Outside bets, High-payout inside splits/corners, 5-number Neighbor bets, and 10-spin color history tracker.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2: Escape the Jungle 3D Mini Golf -->
+        <article class="project-card">
+            <h3>⛳ Escape the Jungle — 3D Mini Golf <span class="tech-tag">JavaScript / Three.js</span></h3>
+            <p class="project-meta">Full 3D Web Game Simulation | Physics & Vector Dynamics</p>
+            <p>
+                A high-performance browser golf simulation utilizing <strong>Three.js</strong>. Features realistic vector-based ball roll mechanics, 3D obstacle collision detection against tree stumps, rocks, and logs, and dynamic mouse/keyboard shot trajectory calculations.
+            </p>
+
+            <div class="badge-group">
+                <span class="tech-tag">Three.js WebGL</span>
+                <span class="tech-tag">Vector Physics</span>
+                <span class="tech-tag">Raycasting Aim</span>
+                <span class="tech-tag">Progressive Courses</span>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-btn">Engine Architecture & Mechanics <span>▼</span></button>
+                <div class="accordion-content">
+                    <ul>
+                        <li><strong>Vector Motion & Physics:</strong> Custom surface friction, acceleration dampening, and elastic collision handling off geometric obstacle meshes.</li>
+                        <li><strong>Dynamic Raycast Aiming:</strong> Real-time color-interpolated target trajectory lines that shift from Green (low) to Yellow and Red (max power level 15).</li>
+                        <li><strong>Progressive Level Design:</strong> 3-hole jungle gauntlet (Par 3 "Welcome to Jungle", Par 4 "Rocky Path", and Par 5 "The Gauntlet") with score-to-par tracking.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 3: C++ Board & Card Simulations -->
+        <article class="project-card">
+            <h3>⚔️ Custom Board & Card Game Simulations <span class="tech-tag">C++</span></h3>
+            <p class="project-meta">Data Structures & Low-Level Memory Management</p>
+            <p>
+                Engineered an original 7x7 island exploration game and custom card system utilizing low-level data structures (linked lists, stacks, queues, and multi-dimensional matrices) with zero memory leaks.
+            </p>
+            
+            <div class="accordion">
+                <button class="accordion-btn">Data Structures Details <span>▼</span></button>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Dynamic node-based linked lists for flexible player card hands.</li>
+                        <li>Stack-driven undo history and matrix-mapped coordinate hazards.</li>
+                        <li>Strict pointer arithmetic and manual memory destruction.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Visual Gallery -->
+        <section class="content-card">
+            <h3>Visual Project Snapshots</h3>
+            <div class="gallery">
+                <img src="../img/card.jpg" alt="Card Engine Preview" class="gallery-img active">
+                <img src="../img/bgame.jpg" alt="Board Simulation Preview" class="gallery-img">
+                <img src="../img/jspic.jpg" alt="Game Development Code Preview" class="gallery-img">
+                <button class="prev-btn" aria-label="Previous">&lt;</button>
+                <button class="next-btn" aria-label="Next">&gt;</button>
+            </div>
+
+            <!-- Stats -->
+            <h3>Key Stats</h3>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="counter" data-target="6">0</span>
+                    <span class="stat-label">Core Projects Completed</span>
+                </div>
+                <div class="stat-box">
+                    <span class="counter" data-target="9">0</span>
+                    <span class="stat-label">CS Courses Completed</span>
+                </div>
+                <div class="stat-box">
+                    <span class="counter" data-target="4">0</span>
+                    <span class="stat-label">Languages & Frameworks</span>
+                </div>
+            </div>
+
+            <!-- Skill Progress -->
+            <h3>Core Technical Proficiency</h3>
+            <div class="skill-bar">
+                <p><span>C# / .NET Game Architecture</span> <span>88%</span></p>
+                <div class="bar"><div class="progress" data-percent="88"></div></div>
+            </div>
+            <div class="skill-bar">
+                <p><span>C / C++ (Data Structures, Memory)</span> <span>85%</span></p>
+                <div class="bar"><div class="progress" data-percent="85"></div></div>
+            </div>
+            <div class="skill-bar">
+                <p><span>JavaScript / Three.js 3D Web</span> <span>78%</span></p>
+                <div class="bar"><div class="progress" data-percent="78"></div></div>
+            </div>
+            <div class="skill-bar">
+                <p><span>Python & SQL</span> <span>75%</span></p>
+                <div class="bar"><div class="progress" data-percent="75"></div></div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <button class="modal-btn btn-secondary">System Build Specs</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Window -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 style="margin-top:0; color:#fff;">Development & Runtime Environment</h3>
+            <p><strong>C# Casino Console:</strong> Built on .NET 7.0 SDK / C# 11 with Windows platform sound hooks via <code>Console.Beep</code>.</p>
+            <p><strong>Three.js Golf Simulation:</strong> Built with Node.js, WebGL, npm http-server, running on modern ECMAScript standards.</p>
+            <p><strong>Codebase Status:</strong> Verified builds with 0 compiler errors and optimized state handling.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Daris Kadric. Hosted via GitHub Pages.</p>
+    </footer>
+</body>
+</html>
